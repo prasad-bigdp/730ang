@@ -1,0 +1,11 @@
+<!-- string interpolation -- component to template -->
+<h1>My name is {{username}}</h1>
+<p>The sum of {{a}} and {{b}} is {{a+b}}</p>
+<img src="{{imgURL}}" alt="{{username}}">
+<!-- string interpolation always takes as string-->
+ <button disabled="{{isDisable}}">click me</button>
+ <button [disabled]="isDisable" (click)="fun()">click me 2</button>
+ <div [class]="isGood?'x':'y'">
+  I'm a div
+ </div>
+
