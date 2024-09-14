@@ -6,15 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  username: string = 'saitama';
-  a = 10;
-  b = 20;
-  isGood = false;
-  fun() {
-    this.isGood = this.isGood ? false : true;
+  name: string = "suresh";
+  price = 25;
+  isDisabled = false
+  myClass=true
+  fun()
+  {
+    if (this.myClass)
+      this.myClass = false
+    else
+      this.myClass=true
   }
-
-  isDisable = false;
-  imgURL =
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8-aGCVQm9-hpU01sGMfFQSFzdqssHWU5Rg&s';
 }
