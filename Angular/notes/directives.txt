@@ -1,0 +1,9 @@
+directive is used to manipulate or create dynamic DOM,dynamic control flow. There are three types of directives
+1. control/conditional directives
+2. property directives
+3. custom directives
+
+1. custom/conditional directives: these directives are used to change control flow based on condition.
+  -- ngIf
+  -- ngSwitch
+  -- ngFor
