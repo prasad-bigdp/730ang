@@ -6,14 +6,22 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  isShow = false
-  change()
+  isShow = false;
+  fun1()
   {
-    if (this.isShow)
-      this.isShow = false
-    else
-      this.isShow = true
+    this.isShow=true
   }
- 
+  fun2() {
+    this.isShow=false
+  }
+  isAdmin = false;
+  day: number = 1;
+  fruits=["apple","mango","banana","papaya"]
+
+
+
+
+
+
 
 }

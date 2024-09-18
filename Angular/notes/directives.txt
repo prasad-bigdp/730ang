@@ -4,6 +4,13 @@ directive is used to manipulate or create dynamic DOM,dynamic control flow. Ther
 3. custom directives
 
 1. custom/conditional directives: these directives are used to change control flow based on condition.
-  -- ngIf
-  -- ngSwitch
+  -- ngIf: 
+  <div *ngIf="x else something">
+     <h1>Hello</h1>
+  </div>
+  <ng-template #something>
+   <p>gfhjgdfhj</p>
+  </ng-template>
+  -- ngSwitch:
+  switch case is used to choose between multiple options
   -- ngFor

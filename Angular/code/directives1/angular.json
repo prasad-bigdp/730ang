@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngIf": {
+    "directives1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ng-if",
+            "outputPath": "dist/directives1",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngIf:build:production"
+              "buildTarget": "directives1:build:production"
             },
             "development": {
-              "buildTarget": "ngIf:build:development"
+              "buildTarget": "directives1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "e704e76c-1867-4206-8ea9-c2de49b42031"
+    "analytics": "de133ff0-1d0a-4730-b776-dc164af546ca"
   }
 }
