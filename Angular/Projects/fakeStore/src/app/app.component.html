@@ -1,0 +1,10 @@
+<h1>Products</h1>
+<div class="products" 
+[ngStyle]="{'fontSize':isHeading?'48px':'24px','background-color':bgColor}">
+  <div class="product" *ngFor="let p of products" [ngClass]="{'dark':isDark,}">
+      <img src={{p.image}} alt={{p.title}} height="200"/>
+      <h2>{{p.title | lowercase}}</h2>
+      <p>Price: {{p.price | currency:"INR"}}</p>
+      <button>Add to cart</button>
+  </div>
+</div>
