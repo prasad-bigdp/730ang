@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  b=5
+  obj = {
+    name: "raj",
+    age:50
+  }
+  a = 0.5;
+  tax =0.2;
   products:any[] = [
       {
         id: 1,
@@ -281,6 +288,12 @@ export class AppComponent {
   ];
   bgColor = "white";
   isHeading = false
-  isDark = true;
+  isDark = false;
+  dt: any;
+  constructor()
+  {
+    this.dt = new Date();
+    console.log(this.dt)
+  }
   
 }
