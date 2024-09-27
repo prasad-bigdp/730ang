@@ -13,12 +13,15 @@ How to use Service:
 Dependency Injection: it is one of the fundamental concept in angular.By creating instance in the constructor parameter angular makes the component/pipes/directive independent from its dependencies
 
 HTTP CLIENT:
-httpClient in angular is used to handle http requests
+httpClient in angular is used to handle http requests. http requests such as GET,POST,DELETE,PUT,PATCH
 
 httpClient returns observable similarly as fetch returns promises
 observable means multiple asynchronous functions
+we resolve observable by subscribe
 
-
+1. Goto module , import httpClienModule. it is deprecated in 17 & 18 because 17 & 18 it is in built. , write it in imports
+2. Goto component or service , inject httpClient
+3. using httpClient instance access GET,POST,PUT,DELETE methods
 
 
 
