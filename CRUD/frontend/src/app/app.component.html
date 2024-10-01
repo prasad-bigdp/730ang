@@ -1,0 +1,8 @@
+<h1>Movies List</h1>
+<div id="movies">
+  <div *ngFor="let m of movies" id="movie">
+    <h2>{{m.Title}}</h2>
+    <p>Year:{{m.Year}}</p>
+    <button (click)="deleteMovie(m.id)">delete</button>
+  </div>
+</div>
