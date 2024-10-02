@@ -14,4 +14,11 @@ export class ApiService {
   {
     return this.hc.delete(`http://localhost:3000/movies/${id}`);
   }
+  postData(obj: any) {
+    return this.hc.post('http://localhost:3000/movies',obj);
+  }
+  putData(obj: any)
+  {
+    return this.hc.put(`http://localhost:3000/movies/${obj.id}`,obj);
+  }
 }
