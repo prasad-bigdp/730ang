@@ -18,3 +18,10 @@
        -- property directives
        -- custom directives
     -- pipes
+    -- services
+    -- httpclient
+    -- routing
+    -- lifeCycleMethods
+    -- RxJS
+    -- template forms
+    -- angular with standalone
