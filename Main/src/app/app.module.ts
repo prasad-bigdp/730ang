@@ -1,19 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { firebaseConfig } from './environments/environments';
+import { AngularFireModule } from '@angular/fire/compat';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { ProjectComponent } from './project/project.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
-
+import { SignupComponent } from './signup/signup.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { CartComponent } from './cart/cart.component';
+import {FormsModule} from '@angular/forms'
+import {AuthModule} from '@angular/fire/auth'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,16 +25,20 @@ import { LoginComponent } from './login/login.component';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ProjectsComponent,
+    ProductsComponent,
+    ProductComponent,
     ContactComponent,
-    NotFoundComponent,
-    ProjectComponent,
+    LoginComponent,
+    SignupComponent,
     DashboardComponent,
-    LoginComponent
+    NotFoundComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
