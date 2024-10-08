@@ -16,8 +16,10 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CartComponent } from './cart/cart.component';
-import {FormsModule} from '@angular/forms'
-import {AuthModule} from '@angular/fire/auth'
+import { FormsModule } from '@angular/forms'
+import { AngularFireAuthModule } from '@angular/fire/compat/auth'
+import { HttpClientModule } from '@angular/common/http';
+import { StarRatingPipe } from './star-rating.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,15 +34,18 @@ import {AuthModule} from '@angular/fire/auth'
     SignupComponent,
     DashboardComponent,
     NotFoundComponent,
-    CartComponent
+    CartComponent,
+    StarRatingPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
